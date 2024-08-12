@@ -1,0 +1,103 @@
+:root {
+    background-image: url(bgdia.jpg);
+    display:flex;
+    }
+
+    body{
+        width: 100vw;
+        height: 100vh;
+        background-image: url(bgdia.jpg);
+        display: flex;
+        background-size: cover;
+        transition: 0.4s ease;
+        margin: 0;
+            padding: 0;
+            box-sizing: 0;
+    }
+
+.trilho {
+    width: 120px;
+    height: 30px;
+    background-color: rgb(164, 182, 241);
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+    border: solid 2px #624391 ;
+    margin: 10px;
+}
+
+.trilho .indicador {
+    width: 30px;
+    height: 30px;
+    background-image: url(sol.png) ;
+    background-position: center ;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-color: rgb(57, 88, 167);
+    border-radius: 50%;
+    transform: scale(.9);
+    position: absolute;
+    left: 0;
+    transition: .5s;
+}
+
+.trilho.dark {
+    background-image: url(galaxy.jpg);
+    display: flex;
+    border: solid 2px #d7e9ef;
+}
+
+
+.trilho.dark .indicador {
+    background-image: url(lua.png) ;
+    background-position: center ;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-color: #2b1773;
+    border-radius: 50%;
+    transform: scale(.9);
+    position: absolute;
+    left: 90px;
+    transition: .5s;
+}
+
+.trilho.rainy {
+    background-color: rgb(146, 156, 180);
+    display: flex;
+    border: solid 2px #363653;
+}
+.trilho.rainy .indicador {
+    left: 45px;
+    background-color: #130b30;
+    background-image: url(chuva.png);
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body.dark {
+        width: 100vw;
+        height: 100vh;
+        background-image: url(bgnoite.jpg);
+        display: flex;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: 0.4s ease;
+        margin: 0;
+            padding: 0;
+            box-sizing: 0;
+    }
+
+    body.rainy {
+        width: 100vw;
+        height: 100vh;
+        background-image: url(bgchuva.jpg);
+        display: flex;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: 0.4s ease;
+        margin: 0;
+            padding: 0;
+            box-sizing: 0;
+    }
+
