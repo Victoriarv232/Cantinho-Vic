@@ -1,0 +1,152 @@
+:root {
+    background-image: url(imgs/bgdia.jpg);
+    display:flex;
+    }
+
+    body{
+        width: 100vw;
+        height: 100vh;
+        background-image: url(imgs/bgdia.jpg);
+        display: flex;
+        background-size: cover;
+        transition: 0.4s ease;
+        margin: 0;
+            padding: 0;
+            box-sizing: 0;
+    }
+
+.trilho {
+    width: 120px;
+    height: 30px;
+    background-color: rgb(164, 182, 241);
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+    border: solid 2px #624391 ;
+    margin: 10px;
+}
+
+.trilho .indicador {
+    width: 30px;
+    height: 30px;
+    background-image: url(imgs/sol.png) ;
+    background-position: center ;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-color: rgb(57, 88, 167);
+    border-radius: 50%;
+    transform: scale(.9);
+    position: absolute;
+    left: 0;
+    transition: .5s;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.trilho.dark {
+    background-image: url(imgs/galaxy.jpg);
+    display: flex;
+    border: solid 2px #d7e9ef;
+}
+
+
+.trilho.dark .indicador {
+    background-image: url(imgs/lua.png) ;
+    background-position: center ;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-color: #2b1773;
+    border-radius: 50%;
+    transform: scale(.9);
+    position: absolute;
+    left: 90px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.trilho.rainy {
+    background-color: rgb(146, 156, 180);
+    display: flex;
+    border: solid 2px #363653;
+}
+.trilho.rainy .indicador {
+    left: 45px;
+    background-color: #130b30;
+    background-image: url(imgs/chuva.png);
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+body.dark {
+        width: 100vw;
+        height: 100vh;
+        background-image: url(imgs/bgnoite.jpg);
+        display: flex;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: 0.4s ease;
+        margin: 0;
+            padding: 0;
+            box-sizing: 0;
+    }
+
+    body.rainy {
+        width: 100vw;
+        height: 100vh;
+        background-image: url(imgs/bgchuva.jpg);
+        display: flex;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: 0.4s ease;
+        margin: 0;
+            padding: 0;
+            box-sizing: 0;
+    }
+
+    .carousel {
+        width: 440px;
+        display: flex;
+        overflow: hidden;
+        margin-top: 63px;
+        margin-left: 230px;
+        position: absolute;
+    }
+    
+    .carousel-images {
+        display: flex;
+        transition: transform 0.5s ease;
+        z-index: 1;
+        width: calc(70px * 5);
+    }
+    
+    .carousel-images img {
+        margin-top: 11px;
+        margin-left: 8px;
+        width:70px;
+        object-fit: cover;
+        flex-shrink: 0;
+    }
+    
+    button {
+        position: absolute;
+        margin-top: 60px;
+        transform: translateY(-50%);
+        background: rgba(0, 0, 0, 0.5);
+        border: none;
+        font-size: 2rem;
+        color: #fff;
+        cursor: pointer;
+        padding: 5px;
+        z-index: 10;
+    }
+    
+    #prevBtn {
+        left: 10px;
+    }
+    
+    #nextBtn {
+        left: 400px;
+    }
+    
